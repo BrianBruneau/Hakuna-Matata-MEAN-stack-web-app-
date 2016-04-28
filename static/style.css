@@ -1,0 +1,40 @@
+body {
+  background-color: white;
+}
+
+#hakuna_title {
+  font-size: 40px;
+  font-family: sans-serif;
+  color: black;
+}
+
+#title_row {
+  background-color: tan;
+}
+
+#login_col {
+  margin-top: 12px;
+}
+
+#ento_list {
+  margin-top: 50px;
+}
+
+
+
+/** { font-family:Arial; }
+h2 { padding:0 0 5px 5px; }
+h2 a { color: #224f99; }
+a { color:#999; text-decoration: none; }
+a:hover { color:#802727; }
+p { padding:0 0 5px 0; }*/
+
+.remIngrd{
+
+  margin-left: 460px;
+  color:#999;
+}
+
+#addIngrd {
+  color:#999;
+}

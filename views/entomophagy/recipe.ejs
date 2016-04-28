@@ -1,0 +1,92 @@
+
+
+<div class="row">
+  <div class="col-xs- col-lg-2">
+    <% include ../partials/entoPartial.ejs %>
+  </div>
+      <div class="col-xs- col-lg-5">
+      <h1>Add your own recipe!</h1>
+        <form method="POST" action="/entomophagy/recipe">
+          <div>
+            <p>Title<input type="text" name="title" required></input></p>
+          </div>
+          <div>
+            <p>Servings<input type="integer" name="serving" required></input></p>
+          </div>
+
+          <h4>Ingredients</h4>
+            <div id="p_ingrd">
+              <p>
+              <select name="type">
+                <option value="insect">Insect</option>
+                <option value="veggie">Vegetable</option>
+                <option value="condiment">Condiment</option>
+                <option value="other">Other</option>
+              </select>
+              <br>
+              <label>Name:<input type="text" name="ingredient" required></input></label>
+              <label>Amount:<input type="text" name="amount" required></input></label>
+              </p>
+            </div>
+          <little><a href="#" id="addIngrd">New ingredient</a></little>
+          <div id="directions">
+            <h4>Step 1:</h4>
+            <p>
+            <textarea name="step" rows="2" cols="50" required></textarea>
+            </p>
+          </div>
+          <little><a href="#" id="addStep">New Step</a></little>
+          <div>
+            <h4>Notes:</h4>
+            <p>
+              <textarea name="notes" rows="8" cols="30"></textarea>
+            </p>
+          </div>
+          <div id="reviews">
+                      
+          </div>
+          <div>
+            <p><input type="submit" value="Submit"></input></p>
+          </div>
+
+        </form>
+      </div>
+      <div class="col-xs- col-lg-4">
+        <% include showRecipe %>
+      </div>
+    </div>
+
+
+
+
+
+
+  <!-- </div>
+  <div class="col-xs- col-lg-4">
+    <h1>Test Recipe page</h1>
+    <h2>Simple Sponge Cake</h1>
+    <h3>Ingredients</h2>
+      <ul>
+        <li>3 eggs</li>
+        <li>100g castor sugar</li>
+        <li>85g self-raising flour</li>
+      </ul>
+    <h4>Notes on ingredients</h3>
+      <dl>
+        <dt>Castor Sugar</dt>
+          <dd>Finely granulated white sugar.</dd>
+        <dt>Self-raising flour</dt>
+          <dd>A pre-mixed combination of flour and leavening agents (usually salt and baking powder).</dd>
+      </dl>
+    <h2>Method</h2>
+      <ol>
+        <li>Preheat the oven to 190°C.</li>
+        <li>Grease a 20cm round cake pan.</li>
+        <li>In a medium bowl, whip together the eggs and castor sugar until fluffy.</li>
+        <li>Fold in flour.</li>
+        <li>Pour mixture into the prepared pan.</li>
+        <li>Bake for 20 minutes in the preheated oven, or until the top of the cake springs back when lightly pressed.</li>
+        <li>Cool in the pan over a wire rack.</li>
+      </ol>
+  </div>
+</div> -->

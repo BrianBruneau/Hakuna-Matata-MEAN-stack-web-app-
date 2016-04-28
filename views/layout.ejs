@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hakuna Matata</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+
+  </head>
+  <body>
+    <% if(typeof alert !== 'undefined') { %>
+        <% for (key in alerts) { %>
+          <% alerts[key].forEach(function(msg) { %>
+            <div class="alert alert-<%= key %>"><%= msg %></div>
+          <% }); %>
+        <% } %>
+      <% } %>
+
+  <div id="title_row" class="row">
+    <div class="col-xs- col-lg-offset-1 col-lg-4">
+      <header id="hakuna_title">Hakuna Matata</header>
+    </div>
+    <div id="login_col" class="col-xs- col-lg-3">
+      <ul class="nav nav-pills">
+        <li id="home_btn" role="presentation"><a href="/">Home</a></li>
+        <li id="about_btn" role="presentation"><a href="/aboutUs">About Us</a></li>
+        <li id="ento_btn" role="presentation"><a href="/entomophagy/culture">Entomophagy</a></li>
+      </ul>
+    </div>
+
+  <div id="login_col" class="col-lg-offset-1 col-lg-3">
+    <% if(!currentUser) { %>
+      <div>
+        <a href="/auth/signup" class="btn btn-primary">Signup</a>
+        <a href="/auth/login" class="btn btn-primary">Login</a>
+      </div>
+    <% } else if (currentUser) { %>
+      <div>
+        <a href="/auth/logout" class="btn btn-primary">Logout</a>
+      </div>
+    <% } %>
+    <% if(currentUser) { %>
+      <div>Current user: <%= currentUser.name %></div>
+    <% } %>
+  </div>
+</div>
+    <div class="container-fluid">
+      
+
+      <%- body %>
+    </div>
+
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/main.js"></script>
+  </body>
+</html>

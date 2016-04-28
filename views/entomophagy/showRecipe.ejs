@@ -1,0 +1,36 @@
+
+      <div class="col-xs- col-lg-4">
+      <% rec.forEach(function(recipe) {  %>
+      <h1>Recipe</h1>
+            <h3><%= recipe.title %></h3>
+
+            <h3><%= recipe.serving %></h3>
+
+          <h4>Ingredients</h4>
+              <% if (Array.isArray(recipe.ingredients)) { %>
+              <p><% for (i = 0; i < recipe.ingredients.length; i++) { %>
+              <label><%= recipe.ingredients[i].amount + ' ' + recipe.ingredients[i].name %></label>
+              </p>
+              <% }; %>
+              <% } else { %>
+                <label><%= recipe.ingredients[0].amount + ' ' + recipe.ingredients[0].name %></label>
+              <%  } %>
+            <h4>Steps:</h4>
+            <ol>
+            <% if (Array.isArray(recipe.directions)) { %>
+          <% for (i = 0; i < recipe.directions.length; i++) { %>
+
+            <li><%= recipe.directions[i].step %></li>
+          <% }; %>
+          <% } else { %>
+            <li><%= recipe.directions[0].step %></li>
+          <%  } %>
+          </ol>
+            <h4>Notes:</h4>
+            <p>
+              <%= recipe.notes %>
+            </p>
+          <div id="reviews">
+      </div>
+      <% }); %>
+</div>
