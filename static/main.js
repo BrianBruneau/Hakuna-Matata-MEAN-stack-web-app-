@@ -3,8 +3,8 @@ $(function() {
         var i = $('#p_ingrd p').size() + 1;
         
         $('#addIngrd').on('click', function() {
-                var removeLink = $('<a href="#" class="remIngrd pull-right">Remove Ingredient</a>');
-                var newIngredientParagraph = $('<p><select name="type"><option value="insect">Insect</option><option value="veggie">Vegetable</option><option value="condiment">Condiment</option><option value="other">Other</option></select><br><label>Name:<input type="text" name="ingredient"></input></label><label>Amount:<input type="text" name="amount"></input></label></p>')
+                var removeLink = $('<a href="#" class="remIngrd pull-right">Remove</a>');
+                var newIngredientParagraph = $('<p><select class="selectBox" name="type"><option value="insect">Insect</option><option value="veggie">Vegetable</option><option value="condiment">Condiment</option><option value="other">Other</option></select><br><label>Name:  <input type="text" name="ingredient"></input></label> <label>Amount:  <input type="text" name="amount"></input></label></p>')
                 
                 removeLink.appendTo(newIngredientParagraph)
 
