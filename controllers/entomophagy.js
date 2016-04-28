@@ -4,7 +4,7 @@ var db = require('../models')
 var router = express.Router();
 
 var Recipe = require('../models/recipe');
-mongoose.connect('mongodb://localhost/HakunaMatata');
+mongoose.connect('mongodb://YungKeybl:aaj2003@ds021701.mlab.com:21701/heroku_fvc66sc5');
 
 router.get('/culture', function(req, res) {
   res.render('entomophagy/culture')
