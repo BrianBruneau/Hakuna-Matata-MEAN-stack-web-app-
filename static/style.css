@@ -2,46 +2,40 @@
 
 
 .home-bg {
-  background-image: url('https://www.pxleyes.com/images/contests/no%20water/fullsize/no%20water_4b8ad7c1d43bf_hires.jpg');
-  height: 1000px;
+  background-image: url('http://www.pxleyes.com/images/contests/no%20water/fullsize/no%20water_4b8ad7c1d43bf_hires.jpg');
+  height: 2000px;
   background-size: cover;
+  background-repeat: repeat-y;
+  background-color: black;
 }
 
 .recipe-bg {
-  background-image: url('https://images5.alphacoders.com/375/375989.jpg'),
-  url('http://wallpapershacker.com/wallpaper_mirror/wood_leaves_panels_vines_hd-wallpaper-1076101.jpg');
-  background-size: contain, contain;
-  background-repeat: no-repeat, no-repeat;
-  background-position: top, bottom;
+  background-image: url('https://images5.alphacoders.com/375/375989.jpg');
+  height: 2000px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
 .culture-bg {
-  background-image: url('https://www.esperanzaeducation.ca/wp-content/uploads/background.jpg');
+  background-image: url('http://www.esperanzaeducation.ca/wp-content/uploads/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 1000px;
 }
 
 .gallery-bg {
-  background-image: url('https://www.edgeconsultant.com/wp-content/uploads/2013/08/ancient-egypt-pyramids-wallpaper3.jpg');
+  background-image: url('http://www.edgeconsultant.com/wp-content/uploads/2013/08/ancient-egypt-pyramids-wallpaper3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 1000px;
 }
 
 .scale-bg {
-  background-image: url('https://i.stack.imgur.com/s5BB7.jpg');
+  background-image: url('http://i.stack.imgur.com/s5BB7.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 1000px;
-}
-
-#hakuna_title {
-  margin-top: 10px;
-  font: 400 55px/1.2 'Merienda One', Helvetica, sans-serif;
-  color: #ffe066;
-  text-shadow: 3px 3px 3px black;
 }
 
 .home_btn, .about_btn, .ento_btn {
@@ -60,6 +54,138 @@
   background-color: #ffb366;
   border-color: black;
 }
+
+.mySlides {
+  width: 500px;
+  height: 500px;
+}
+
+.slide_box {
+  border-width: 15px;
+  border-radius: 4px;
+  border-color: black;
+  border-style: groove;
+}
+
+.remIngrd{
+
+  margin-left: 460px;
+  color:#999;
+}
+
+.recipeShow {
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  border-style: double;
+  width: 450px;
+  background-color: lightgray;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.selectBox {
+  margin-bottom: 5px;
+}
+
+.rec_h1 {
+  font: 400 38px/1.5 'Pacifico', Helvetica, sans-serif;
+  color: #ebf5f9;
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 5px 5px 0px rgba(0,0,0,0.05);
+}
+
+.rec_h4 {
+  font: 400 25px/1.5 'Pacifico', Helvetica, sans-serif;
+  color: #ebf5f9;
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 5px 5px 0px rgba(0,0,0,0.05);
+}
+
+.rec_h5 {
+  font: 400 20px/1.5 'Pacifico', Helvetica, sans-serif;
+  color: black;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.1), 3px 3px 0px rgba(0,0,0,0.05);
+}
+
+.rec_li {
+  font: 400 20px/1.5 'Pacifico', Helvetica, sans-serif;
+  color: black;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.1), 3px 3px 0px rgba(0,0,0,0.05);
+}
+
+.rec_p {
+  font: 400 18px/1.5 'Pacifico', Helvetica, sans-serif;
+  color: black;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.1), 3px 3px 0px rgba(0,0,0,0.05);
+}
+
+#ento_paragraph_holder {
+  border-radius: 10px;
+  border-style: double;
+  border-width: 7px;
+  width: 1000px;
+}
+
+#ento_paragraph {
+  font: 400 20px/1.2 'Merienda One', Helvetica, sans-serif;
+  color: #ffe066;
+  text-shadow: 1.5px 1.5px 1.5px black;
+  line-height: 150%;
+  padding: 8px;
+}
+
+#ento_head {
+  font: 400 30px/1.2 'Merienda One', Helvetica, sans-serif;
+  color: #009900;
+  text-shadow: 2px 2px 2px #4d2600;
+  margin-bottom: 20px;
+}
+
+#issues_head {
+  margin-left: 30px;
+  color: white;
+}
+
+#cricket_1_holder {
+  margin-top: 30px;
+}
+
+#cricket_1 {
+  width: 500px;
+  height: 1200px;
+}
+
+#world_pop_div {
+  width: 300px;
+  height: 100px;
+  background-color: black;
+  font: 400 20px/1.3 'Berkshire Swash', Helvetica, sans-serif;
+  color: white;
+  text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
+}
+
+#worldpop {
+  font: 400 30px/1.3 'Berkshire Swash', Helvetica, sans-serif;
+  color: #cc0000;
+  text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
+}
+
+#recipe_head {
+  margin-left: 15px;
+  font: 400 50px/1.5 'Pacifico', Helvetica, sans-serif;
+  color: #ebf5f9;
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+}
+
+#hakuna_title {
+  margin-top: 10px;
+  font: 400 55px/1.2 'Merienda One', Helvetica, sans-serif;
+  color: #ffe066;
+  text-shadow: 3px 3px 3px black;
+}
+
 
 #title_row {
   background-image: url('https://toubabtales.files.wordpress.com/2013/12/img_1543.jpg');
@@ -82,7 +208,7 @@
 }
 
 #ento_link1 {
-    background-image: url('https://3.bp.blogspot.com/-th1BdwN6x3M/U1krPkHT-eI/AAAAAAAAL1I/5SxA-NpejmQ/s1600/ladybugs-wallpapers-(1).jpg');
+    background-image: url('http://3.bp.blogspot.com/-th1BdwN6x3M/U1krPkHT-eI/AAAAAAAAL1I/5SxA-NpejmQ/s1600/ladybugs-wallpapers-(1).jpg');
     background-size: 30% 100%;
     background-repeat: no-repeat;
     background-position: right;
@@ -102,7 +228,7 @@
 }
 
 #ento_link3 {
-    background-image: url('https://www.mirrordaily.com/wp-content/uploads/2015/12/Wild-Bees-Are-In-Low-Numbers-In-Crucial-Areas.jpg');
+    background-image: url('http://www.mirrordaily.com/wp-content/uploads/2015/12/Wild-Bees-Are-In-Low-Numbers-In-Crucial-Areas.jpg');
     background-size: 30% 100%;
     background-repeat: no-repeat;
     background-position: right;
@@ -112,7 +238,7 @@
 }
 
 #ento_link4 {
-    background-image: url('https://www.topbest.ph/blog/wp-content/uploads/2015/11/locust.jpg');
+    background-image: url('http://www.topbest.ph/blog/wp-content/uploads/2015/11/locust.jpg');
     background-size: 30% 100%;
     background-repeat: no-repeat;
     background-position: right;
@@ -151,25 +277,6 @@ input, textarea{
   border-radius: 10px;
 }
 
-.remIngrd{
 
-  margin-left: 460px;
-  color:#999;
-}
-
-.recipeShow {
-  margin-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  border-radius: 10px;
-  border-style: double;
-  width: 450px;
-  background-color: tan;
-}
-
-.selectBox {
-  margin-bottom: 5px;
-}
 
 

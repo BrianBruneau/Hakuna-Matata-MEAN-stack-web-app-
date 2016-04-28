@@ -3,36 +3,36 @@
       
       <% rec.forEach(function(recipe) {  %>
       <div class="recipeShow">
-            <h1><%= recipe.title %></h1>
+            <h1 class="rec_h1"><%= recipe.title %></h1>
 
-            <h5>Servings: <%= recipe.servings %></h5>
+            <h5 class="rec_h5">Servings: <%= recipe.servings %></h5>
 
-          <h4>Ingredients:</h4>
+          <h4 class="rec_h4">Ingredients:</h4>
               <ul>
               <% if (Array.isArray(recipe.ingredients)) { %>
               <% for (i = 0; i < recipe.ingredients.length; i++) { %>
-              <li><%= recipe.ingredients[i].amount + ' ' + recipe.ingredients[i].name %></li>
+              <li class="rec_li"><%= recipe.ingredients[i].amount + ' ' + recipe.ingredients[i].name %></li>
               </p>
               <% }; %>
               <% } else { %>
-                <li><%= recipe.ingredients[0].amount + ' ' + recipe.ingredients[0].name %></li>
+                <li class="rec_li"><%= recipe.ingredients[0].amount + ' ' + recipe.ingredients[0].name %></li>
               <%  } %>
               </ul>
-            <h4>Steps:</h4>
+            <h4 class="rec_h4">Steps:</h4>
             <ol>
             <% if (Array.isArray(recipe.directions)) { %>
           <% for (i = 0; i < recipe.directions.length; i++) { %>
 
-            <li><%= recipe.directions[i].step %></li>
+            <li class="rec_li"><%= recipe.directions[i].step %></li>
             <br>
           <% }; %>
           <% } else { %>
-            <li><%= recipe.directions[0].step %></li>
+            <li class="rec_li"><%= recipe.directions[0].step %></li>
             <br>
           <%  } %>
           </ol>
-            <h4>Notes:</h4>
-            <p>
+            <h4 class="rec_h4">Notes:</h4>
+            <p class="rec_p">
               <%= recipe.notes %>
             </p>
           <div id="reviews">
