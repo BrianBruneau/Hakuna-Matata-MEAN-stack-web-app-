@@ -12,7 +12,7 @@ router.post('/signup', function(req, res) {
     where: {email: req.body.email},
     defaults: {name: req.body.name, password: req.body.password}
   }).spread(function(user, created) {
-    res.redirect('/');
+    res.redirect('login');
   }).catch(function(err) {
     res.send(err);
   });
