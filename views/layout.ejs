@@ -23,15 +23,18 @@
 
   </head>
   <body>
-    <% if(typeof alert !== 'undefined') { %>
+  <div class="row">
+    <div class="container">
+      <% if (typeof alerts !== 'undefined') { %>
         <% for (key in alerts) { %>
-          <% alerts[key].forEach(function(msg) { %>
-            <div class="alert alert-<%= key %>"><%= msg %></div>
+          <% alerts[key].forEach(function(thisMsg) { %>
+            <div class="alert alert-<%= key %>"><%= thisMsg %></div>
           <% }); %>
         <% } %>
       <% } %>
-
+  </div>
   <div id="title_row" class="row">
+
     <div class="col-xs- col-lg-offset-1 col-lg-4">
       <header id="hakuna_title">Hakuna Matata</header>
     </div>

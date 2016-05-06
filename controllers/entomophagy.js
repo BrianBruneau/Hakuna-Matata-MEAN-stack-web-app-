@@ -7,15 +7,28 @@ var Recipe = require('../models/recipe');
 mongoose.connect('mongodb://YungKeybl:aaj2003@ds021701.mlab.com:21701/heroku_fvc66sc5');
 
 router.get('/culture', function(req, res) {
-  res.render('entomophagy/culture')
+  if (req.currentUser) {
+  res.render('entomophagy/culture');
+  } else if(!req.currentUser) {
+    req.flash('danger', 'You must be logged in to view this page!');
+    res.redirect('/');
+  };
 });
+  
+
 
 router.get('/recipe', function(req, res) {
   Recipe.find({}, function(err, recipes) {
     if(err) res.json(err);
-    else res.render('entomophagy/recipe', {rec: recipes})
-  })
+    else if (req.currentUser) {
+      res.render('entomophagy/recipe', {rec: recipes})
+    } else if(!req.currentUser) {
+      req.flash('danger', 'You must be logged in to view this page!');
+      res.redirect('/');
+  };
 });
+});
+
 
 router.post('/recipe', function(req, res) {
   // req.body.type: [ 'insect', 'veggie' ],
@@ -74,11 +87,25 @@ router.post('/recipe', function(req, res) {
 });
 
 router.get('/gallery', function(req, res) {
+  if (req.currentUser) {
   res.render('entomophagy/gallery')
+  } else if(!req.currentUser) {
+    req.flash('danger', 'You must be logged in to view this page!');
+    res.redirect('/');
+  };
 });
+  
+
 
 router.get('/scaleIt', function(req, res) {
+  if (req.currentUser) {
   res.render('entomophagy/scaleIt')
-})
+  } else if(!req.currentUser) {
+    req.flash('danger', 'You must be logged in to view this page!');
+    res.redirect('/');
+  };
+});
+  
+
 
 module.exports = router;
