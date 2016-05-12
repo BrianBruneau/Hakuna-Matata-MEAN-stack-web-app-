@@ -152,6 +152,12 @@
   text-shadow: 2px 2px 0px rgba(0,0,0,0.1), 3px 3px 0px rgba(0,0,0,0.05);
 }
 
+.recipe_linker-btn {
+/*  background-color: lightblue;
+  padding: 10px;
+  border-radius: 5px;*/
+}
+
 #mission_parag {
   font: 400 20px/1.2 'Merienda One', Helvetica, sans-serif;
   color: #806000;
