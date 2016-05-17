@@ -1,6 +1,6 @@
-# Project 1 : Game.
+# Project 2 : Full-Stack App.
 
-For my project, I have chosen to create the game of Blackjack.
+For my app, I chose to create a recipe maker and raise awareness to the consumption of meat..
 
 ## One peice at a time.
 
